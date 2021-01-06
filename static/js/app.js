@@ -1,4 +1,4 @@
-const file = "Data/samples.json";
+const file = "data/samples.json";
 function buildCharts(samplechoice) {
   d3.json(file).then((data) => {
     var sample = data.samples.filter(a => a.id == samplechoice);
